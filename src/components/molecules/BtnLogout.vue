@@ -39,7 +39,7 @@
     }
     .btn-logout:hover {
         box-shadow: 2px 2px 2px 2px var(--bgPrimary);
-        transform: scale(1.15);
+        transform: scale(1.1);
     }
 
     .search-icon {

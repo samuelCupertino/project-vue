@@ -15,6 +15,18 @@
 
 <style>
   :root {
+    --primary: #62b983bf;
+    --secondary: #50ff96;
+    --tertiary: #62b983;
+    --bgPrimary: #4f966a;
+    --bgSecondary: #2e3e4e;
+    --bgTertiary: #3a4f67;
+    --textPrimary: #e4ffee;
+    --textSecondary: #dbffe9;
+    --textTertiary: #f7fffa;
+  }
+
+  :root body.dark {
     --primary: #35495e;
     --secondary: #62b983;
     --tertiary: #6c697c;

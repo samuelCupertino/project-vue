@@ -37,11 +37,11 @@
     }
     .scroll-vertical::before {
         top: 0px;
-        background-image: linear-gradient(rgb(29, 25, 51), transparent);
+        background-image: linear-gradient(var(--bgSecondary), transparent);
     }
     .scroll-vertical::after {
         bottom: 0px;
-        background-image: linear-gradient(transparent, rgb(29, 25, 51));
+        background-image: linear-gradient(transparent, var(--bgSecondary));
     }
 
     .scroll-vertical > *:first-child {

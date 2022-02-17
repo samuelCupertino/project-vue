@@ -20,14 +20,14 @@
     --tertiary: #62b983;
     --bgPrimary: #4f966a;
     --bgSecondary: #2e3e4e;
-    --bgTertiary: #3a4f67;
+    --bgTertiary: #1c3247;
     --textPrimary: #e4ffee;
     --textSecondary: #dbffe9;
     --textTertiary: #f7fffa;
   }
 
   :root body.dark {
-    --primary: #35495e;
+    --primary: #4a6683;
     --secondary: #62b983;
     --tertiary: #6c697c;
     --bgPrimary: #141128;
@@ -69,7 +69,7 @@
     list-style: none;
   }
 
-  input:focus {
+  *:focus {
     outline: none;
   }
 </style>

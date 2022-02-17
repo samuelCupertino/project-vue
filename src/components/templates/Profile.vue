@@ -26,21 +26,35 @@
 
 <style scoped>
     .layout {
+        --gapWidth: min(20px, 3vw);
+        --favoriteWidth: min(80px, 18vw);
+        --contentWidth: calc(100% - var(--favoriteWidth) - var(--gapWidth));
+        --profileWidth: min(250px, 60vw);
+        --headerHeight: min(60px, 18vw);
+
+
         display: grid;
-        grid-template-columns: 80px 1fr 250px;
-        grid-template-rows: 60px auto;
+        grid-template-columns: var(--favoriteWidth) auto var(--profileWidth);
+        grid-template-rows: var(--headerHeight) calc(100vh - var(--headerHeight) - var(--gapWidth) * 3);
         grid-template-areas:
             "favorite header profile"
             "favorite content profile";
-        gap: 20px;
+        gap: var(--gapWidth);
+        padding: var(--gapWidth);
 
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-
-        padding: 20px;
         box-sizing: border-box;
-
         background-color: var(--bgPrimary);
+    }
+
+    @media (max-width: 768px) {
+        .layout {
+            grid-template-columns: var(--favoriteWidth) var(--contentWidth) var(--profileWidth);
+            grid-template-areas:
+                "favorite header ."
+                "favorite content profile";
+        }
     }
 </style>

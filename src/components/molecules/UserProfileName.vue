@@ -1,9 +1,9 @@
 <template>
     <div class="profile-name">
-        <Title class="name">Samuel Cupertino</Title>
+        <Title class="name" fontSize="min(16pt, 5vw)">Samuel Cupertino</Title>
         <div class="login">
-            <Text>@samuelCupertino</Text>
-            <Icon class="icon-copy" name="contentCopy" size="16" margin />
+            <Text fontSize="min(12pt, 4vw)" lineHeight="min(14px, 4.5vw)">@samuelCupertino</Text>
+            <Icon class="icon-copy" name="contentCopy" size="min(12pt, 4vw)" />
         </div>
     </div>
 </template>
@@ -35,13 +35,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2px;
+        align-items: center;
+        gap: min(4px, 1vw);
         margin: v-bind(margin);
     }
 
     .profile-name .login {
         font-size: 12pt;
         display: flex;
+        align-items: center;
         gap: 5px;
     }
 

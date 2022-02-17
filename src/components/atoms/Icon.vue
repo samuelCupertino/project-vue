@@ -1,5 +1,5 @@
 <template>
-    <mdicon class="icon" :name="name" :size="size" :spin="spin"/>
+    <mdicon class="icon" :name="name" :spin="spin"/>
 </template>
 
 <script>
@@ -12,7 +12,7 @@
             },
             size: {
                 type: Number,
-                default: 24
+                default: 'min(24pt, 6vw)'
             },
             spin: {
                 type: Boolean,
@@ -21,3 +21,13 @@
         }
     }
 </script>
+
+<style>
+    .icon.mdi {
+        line-height: 0;
+    }
+    .icon.mdi > svg {
+        width: v-bind(size);
+        height: v-bind(size);
+    }
+</style>

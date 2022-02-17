@@ -18,7 +18,7 @@
             },
             margin: {
                 type: String,
-                default: '0 0 5px 0'
+                default: '0'
             },
         }
     }

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <input class="search-input" type="text" placeholder="Search" />
-        <Icon class="search-icon" name="magnify" size="32" />
+        <Icon class="search-icon" name="magnify" size="min(24pt, 8vw)" />
     </div>
 </template>
 
@@ -47,7 +47,7 @@
     .search-input {
         width: 0;
         padding: 3px 0;
-        font-size: 12pt;
+        font-size: min(12pt, 5vw);
         color: var(--textSecondary);
         background-color: transparent;
         border: none;

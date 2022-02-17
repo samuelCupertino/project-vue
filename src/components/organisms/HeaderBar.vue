@@ -22,12 +22,12 @@
     .header {
         grid-area: header;
         background-color: var(--bgSecondary);
-        border-radius: 20px;
+        border-radius: min(20px, 5vw);
 
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
-        padding: 10px 20px;
+        gap: min(20px, 5vw);
+        padding: min(10px, 5vw) min(20px, 5vw);
     }
 </style>

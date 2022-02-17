@@ -4,10 +4,10 @@
             src="https://github.com/samuelCupertino.png" 
             alt="foto de samuel cupertino" 
             size="85%"
-            margin="5px 0"
+            margin="min(5px, 2vw) 0"
         />
         <UserProfileName/>
-        <UserProfileData margin="10px 0"/>
+        <UserProfileData margin="min(10px, 2vw) 0"/>
         <UserProfileRepos />
     </aside>
 </template>
@@ -33,14 +33,20 @@
     .profile {
         grid-area: profile;
         background-color: var(--bgSecondary);
-        border-radius: 20px;
-        padding: 20px 15px;
-
-        height: calc(100vh - 40px);
+        border-radius: min(20px, 5vw);
+        padding: min(20px, 5vw);
         box-sizing: border-box;
-            
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    @media (max-width: 768px) {
+        .layout.profile-visible  .profile {
+            transform: translateX(calc(-1 * var(--profileWidth) - var(--gapWidth)));
+            box-shadow: max(-50px, -10vw) 0 50px 0 var(--bgTertiary);
+        }
     }
 </style>

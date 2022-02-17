@@ -4,8 +4,8 @@
             src="https://project-base-react.vercel.app/_next/image?url=%2Fgithub-dark.png&w=256&q=75" 
             alt="Github logo" 
         />
-        <BtnToggleTheme />
-        <FavoriteList margin="10px 0" />
+        <BtnToggleTheme margin="min(15px, 5vw) 0"/>
+        <FavoriteList margin="min(15px, 5vw) 0" />
         <BtnLogout />
     </aside>
 </template>
@@ -33,12 +33,11 @@
     .favorite {
         grid-area: favorite;
         background-color: var(--bgSecondary);
-        border-radius: 30px;
+        border-radius: min(30px, 7vw);
 
         display: flex;
         flex-direction: column;
-        padding: 15px 10px;
-        height: calc(100vh - 40px);
+        padding: min(15px, 5vw) min(10px, 3vw);
         box-sizing: border-box;
     }
 

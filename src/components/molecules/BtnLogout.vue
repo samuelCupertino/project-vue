@@ -1,6 +1,6 @@
 <template>
     <button class="btn-logout">
-        <Icon class="search-icon" name="logout" size="32" />
+        <Icon class="search-icon" name="logout" size="min(24pt, 7vw)" />
     </button>
 </template>
 
@@ -28,11 +28,10 @@
         align-items: center;
         justify-content: center;
         background-color: var(--bgTertiary);
-        padding: 10px;
+        padding: min(10px, 3.5vw);
         border-radius: 20px;
         width: 90%;
         margin: 0 auto;
-        aspect-ratio: 1;
         box-shadow: 2px 2px 2px var(--bgPrimary);
         cursor: pointer;
         transition: 0.5s;

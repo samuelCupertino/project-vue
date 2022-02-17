@@ -1,6 +1,6 @@
 <template>
     <div class="favorite-like">
-        <Icon class="icon-likes" name="heartOutline" size="48"/>
+        <Icon class="icon-likes" name="heartOutline" size="min(40pt, 12vw)"/>
     </div>
     <ScrollVertical :margin="margin">
         <ul class="favorite-list">
@@ -39,7 +39,6 @@
     }
     .icon-likes {
         color: var(--primary);
-        font-size: 28pt;
         cursor: pointer;
         transition: 1s;
     }
@@ -69,7 +68,7 @@
         content: attr(data-num);
         color: var(--textTertiary);
         background-color: var(--primary);
-        font-size: 11pt;
+        font-size: min(11pt, 4vw);
         font-weight: bolder;
         padding: 0px 3.5px;
         border-radius: 50rem;

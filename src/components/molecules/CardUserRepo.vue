@@ -5,14 +5,14 @@
                 <article class="user-repo">
                     <ul class="repo-icons">
                         <li class="repo-icon">
-                            <icon name="heartOutline" class="icon-like"/>
+                            <Icon name="heartOutline" size="min(20pt, 6vw)" class="icon-like"/>
                         </li>
                         <li class="repo-icon">
-                            <icon name="starOutline" size="28" />
+                            <Icon name="starOutline" size="min(20pt, 6vw)" />
                             <span>15</span>
                         </li>
                         <li class="repo-icon">
-                            <icon name="sourceFork" />
+                            <Icon name="sourceFork" size="min(16pt, 5vw)"/>
                             <span>15</span>
                         </li>
                     </ul>
@@ -21,10 +21,10 @@
                             class="user-avatar"
                             src="https://github.com/samuelCupertino.png" 
                             alt="foto do proprietario do repositorio" 
-                            size="60px"
+                            size="min(60px, 15vw)"
                         />
-                        <Title fontSize="12pt" color="var(--textSecondary)">Titleooo</Title>
-                        <Text fontSize="10pt" color="var(--textTertiary)">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness..</Text>
+                        <Title fontSize="min(12pt, 3.5vw)" margin="0 0 min(10px, 4vw)" color="var(--textSecondary)">But I must explain</Title>
+                        <Text fontSize="min(10pt, 3.5vw)" lineHeight="min(14pt, 5vw)" :maxLine="3" color="var(--textTertiary)">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</Text>
                     </div>
                 </article>
             </li>
@@ -60,17 +60,16 @@
 <style scoped>
     .container {
         display: grid;
-        gap: 20px;
+        gap: min(20px, 5vw);
         grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
     }
 
     .user-repo {
-        min-width: 220px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-        border-radius: 15px;
+        gap: min(10px, 10vw);
+        padding: min(10px, 3vw);
+        border-radius: min(15px, 5vw);
         border: 1px solid transparent;
         background-color: var(--bgTertiary);
         background-image: linear-gradient(135deg, var(--bgSecondary), var(--primary), var(--secondary), var(--bgSecondary));
@@ -87,7 +86,8 @@
     .repo-icons {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: min(10px, 5vw);
+        padding-right: 75px;
         color: var(--tertiary);
         transition: 1s;
     }
@@ -97,7 +97,8 @@
     .repo-icon {
         display: flex;
         align-items: center;
-        gap: 3px;
+        gap: min(3px, 1vw);;
+        font-size: min(12pt, 5vw);
         font-weight: bolder;
         cursor: default;
     }
@@ -113,15 +114,15 @@
 
     .repo-content {
         background-image: linear-gradient(200deg, var(--bgPrimary) 30%, rgb(0 0 0 / 40%));
-        padding: 10px;
-        border-radius: 10px;
+        padding: min(10px, 3vw);
+        border-radius: min(10px, 3vw);;
     }
     .user-avatar {
         margin-left: auto;
         display: block;
-        margin-top: -60px;
-        transform: translateY(25px);
-        border: 5px solid var(--bgPrimary);
+        margin-top: max(-60px, -15vw);
+        transform: translateY(50%);
+        border: min(5px, 1vw) solid var(--bgPrimary);
         box-sizing: border-box;
     }
 </style>

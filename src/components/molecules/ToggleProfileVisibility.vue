@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <Icon class="icon-profile" name="accountCircle" size="32" />
+    <div class="container" @click="toggleVisibility">
+        <Icon class="icon-profile" name="accountCircle" size="min(24pt, 8vw)" />
     </div>
 </template>
 
@@ -17,17 +17,31 @@
         },
         components: {
             Icon
+        },
+        methods: {
+            toggleVisibility() {
+                const layout = document.querySelector('.layout')
+                layout.classList.toggle('profile-visible')
+            }
         }
     }
 </script>
 
 <style scoped>
     .icon-profile {
-        color: var(--textTertiary);
-        cursor: pointer;
-        transition-duration: 0.5s;
+        display: none;
     }
-    .icon-profile:hover {
-        color: var(--secondary);
+    
+    @media (max-width: 768px) {
+        .icon-profile {
+            display: block;
+            color: var(--textTertiary);
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        .icon-profile:hover,
+        .layout.profile-visible .icon-profile {
+            color: var(--secondary);
+        }
     }
 </style>

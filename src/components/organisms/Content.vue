@@ -20,9 +20,8 @@
         grid-area: content;
         display: flex;
         background-color: var(--bgSecondary);
-        border-radius: 20px;
+        border-radius: min(20px, 5vw);
 
-        height: calc(100vh - 160px);
-        padding: 20px;
+        padding: var(--gapWidth);
     }
 </style>

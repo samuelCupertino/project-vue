@@ -3,8 +3,8 @@
         <ul class="profile-repos">
             <li v-for="repo in 20" :key="repo">
                 <article class="repo">
-                    <Title fontSize="12pt" color="var(--textSecondary)">Titleooo</Title>
-                    <Text color="var(--textTertiary)">Description Description Description Description Description Description.</Text>
+                    <Title fontSize="min(12pt, 5vw)" margin="0 0 min(10px, 3vw)" color="var(--textSecondary)">Titleooo</Title>
+                    <Text fontSize="min(10pt, 4vw)" lineHeight="min(14pt, 5.5vw)" :maxLine="3" color="var(--textTertiary)">But I must explain to you how all idea of pleasure and praising pain was born and I will give you.</Text>
                 </article>
             </li>
         </ul>
@@ -42,21 +42,13 @@
 
     .repo {
         background-color: var(--bgTertiary);
-        padding: 10px;
+        padding: min(10px, 3.5vw);
         border-radius: 10px;
-        margin: 5px 0px;
+        margin: min(5px, 1.5vw) 0px;
         border: 1px solid var(--bgTertiary);
         transition-duration: 0.5s;
     }    
     .repo:hover {
         border-color: var(--secondary);
-    }
-
-    .repo-title {
-        color: var(--textSecondary);
-        margin-bottom: 5px;
-    }
-    .repo-desc {
-        color: var(--textTertiary);
     }
 </style>

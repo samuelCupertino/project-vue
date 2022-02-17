@@ -1,15 +1,15 @@
 <template>
     <ul class="profile-data">
         <li class="data-item">
-            <Icon name="cloudTags" />
+            <Icon name="cloudTags" size="min(20pt, 6vw)" />
             <span>15</span>
         </li>
         <li class="data-item">
-            <Icon name="account" />
+            <Icon name="account" size="min(20pt, 6vw)" />
             <span>15</span>
         </li>
         <li class="data-item">
-            <Icon class="icon" name="accountGroup" />
+            <Icon name="accountGroup" size="min(20pt, 6vw)" />
             <span>15</span>
         </li>
     </ul>
@@ -36,16 +36,18 @@
     .profile-data {
         display: flex;
         justify-content: space-around;
+        gap: min(2px, 0.5vw);;
         align-items: center;
         color: white;
+        font-size: min(12pt, 5vw);
         margin: v-bind(margin);
     }
 
     .profile-data .data-item {
         display: flex;
         align-items: center;
-        gap: 5px;
-        padding: 5px 10px;
+        gap: min(5px, 1.5vw);
+        padding: min(5px, 2vw) min(10px, 2vw);
         border-radius: 10px;
         cursor: pointer;
 

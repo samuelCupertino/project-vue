@@ -39,6 +39,8 @@
         flex-direction: column;
         padding: min(15px, 5vw) min(10px, 3vw);
         box-sizing: border-box;
+        overflow: hidden auto;
+        transition: background 1s;
     }
 
 </style>

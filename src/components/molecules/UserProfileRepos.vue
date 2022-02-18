@@ -3,7 +3,7 @@
         <ul class="profile-repos">
             <li v-for="repo in 20" :key="repo">
                 <article class="repo">
-                    <Title fontSize="min(12pt, 5vw)" margin="0 0 min(10px, 3vw)" color="var(--textSecondary)">Titleooo</Title>
+                    <Title fontSize="min(12pt, 5vw)" margin="0 0 min(10px, 3vw)" color="var(--textSecondary)">project-base-vue</Title>
                     <Text fontSize="min(10pt, 4vw)" lineHeight="min(14pt, 5.5vw)" :maxLine="3" color="var(--textTertiary)">But I must explain to you how all idea of pleasure and praising pain was born and I will give you.</Text>
                 </article>
             </li>

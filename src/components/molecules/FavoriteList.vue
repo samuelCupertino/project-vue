@@ -4,8 +4,11 @@
     </div>
     <ScrollVertical :margin="margin">
         <ul class="favorite-list">
-            <li class="favorite-user" v-for="repo in 20" :key="repo" data-num="2">
-                <ImageCircle src="https://github.com/samuelCupertino.png" alt="avatar do usuário" />
+            <li class="favorite-user" v-for="(repo, i) in 20" :key="repo" :data-num="parseInt(Math.random() * 5 + 1)">
+                <ImageCircle 
+                    :src="`https://randomuser.me/api/portraits/${Math.random() > 0.5 ? 'men':'women'}/${i}.jpg`"  
+                    alt="avatar do usuário" 
+                />
             </li>
         </ul>
     </ScrollVertical>
@@ -59,7 +62,7 @@
         display: flex;
         border: 2px solid var(--primary);
         position: relative;
-        transition: 0.5s;
+        transition: 1s;
     }
     .favorite-user:hover {
         border-color: var(--secondary);

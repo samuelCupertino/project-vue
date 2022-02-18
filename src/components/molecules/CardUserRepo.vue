@@ -1,7 +1,7 @@
 <template>
     <ScrollVertical>
         <ul class="container">
-            <li v-for="repo in 20" :key="repo">
+            <li v-for="(repo, i) in 20" :key="repo">
                 <article class="user-repo">
                     <ul class="repo-icons">
                         <li class="repo-icon">
@@ -19,7 +19,7 @@
                     <div class="repo-content">
                         <ImageCircle 
                             class="user-avatar"
-                            src="https://github.com/samuelCupertino.png" 
+                            :src="`https://randomuser.me/api/portraits/${Math.random() > 0.5 ? 'men':'women'}/${i}.jpg`" 
                             alt="foto do proprietario do repositorio" 
                             size="min(60px, 15vw)"
                         />

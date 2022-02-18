@@ -32,7 +32,6 @@
         --profileWidth: min(250px, 60vw);
         --headerHeight: min(60px, 18vw);
 
-
         display: grid;
         grid-template-columns: var(--favoriteWidth) auto var(--profileWidth);
         grid-template-rows: var(--headerHeight) calc(100vh - var(--headerHeight) - var(--gapWidth) * 3);
@@ -47,6 +46,7 @@
         overflow: hidden;
         box-sizing: border-box;
         background-color: var(--bgPrimary);
+        transition: background 1s;
     }
 
     @media (max-width: 768px) {
@@ -57,4 +57,5 @@
                 "favorite content profile";
         }
     }
+
 </style>

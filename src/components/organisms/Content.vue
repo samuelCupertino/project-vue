@@ -23,5 +23,6 @@
         border-radius: min(20px, 5vw);
 
         padding: var(--gapWidth);
+        transition: background 1s;
     }
 </style>

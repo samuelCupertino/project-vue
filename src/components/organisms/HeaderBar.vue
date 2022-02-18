@@ -29,5 +29,6 @@
         justify-content: space-between;
         gap: min(20px, 5vw);
         padding: min(10px, 5vw) min(20px, 5vw);
+        transition: background 1s;
     }
 </style>

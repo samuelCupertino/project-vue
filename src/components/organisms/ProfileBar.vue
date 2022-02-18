@@ -40,6 +40,7 @@
         flex-direction: column;
         align-items: center;
         z-index: 2;
+        overflow: hidden auto;
         transition: 1s;
     }
 

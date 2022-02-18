@@ -24,6 +24,7 @@
         flex-direction: column;
         position: relative;
         overflow: hidden scroll;
+        border-radius: 20px;
         margin: v-bind(margin);
     }
     .scroll-vertical::before, 
@@ -33,6 +34,7 @@
         padding: 15px 0px;
         position: sticky;
         margin-top: -30px;
+        pointer-events: none;
         z-index: 1;
     }
     .scroll-vertical::before {

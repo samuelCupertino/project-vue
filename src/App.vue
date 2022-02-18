@@ -18,8 +18,8 @@
     --primary: #62b983bf;
     --secondary: #50ff96;
     --tertiary: #62b983;
-    --bgPrimary: #4f966a;
-    --bgSecondary: #2e3e4e;
+    --bgPrimary: #42b883;
+    --bgSecondary: #35495e;
     --bgTertiary: #1c3247;
     --textPrimary: #e4ffee;
     --textSecondary: #dbffe9;

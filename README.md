@@ -1,3 +1,9 @@
+
+<img src="public/images/run-toggle-theme.gif" />
+<img src="public/images/run-fluid-responsive.gif" />
+<img src="public/images/run-infinite-responsive.gif" />
+
+
 # project-vue
 
 ## Project setup

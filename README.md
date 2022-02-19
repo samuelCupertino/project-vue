@@ -1,31 +1,49 @@
 # About This Project ([video](https://www.instagram.com/p/CaHVBMhOL_s))
-
 <table>
     <tr>
-        <td width="49.9%">
+        <td>
           <img src="public/images/run-toggle-theme.gif" />
         </td>
-        <td width="49.9%">
-          <h2>Project Vue</h2>
-          <p>ola munodo</p>
+        <td>
+            <h2>Technologies</h2>
+            <ul>
+                <li>Vue.js</li>
+                <li>Atomic Design</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
         </td>
     </tr>
     <tr>
-        <td width="49.9%">
-          <h2>Toggle Theme</h2>
-          <p>ola munodo</p>
+        <td>
+            <h2>Toggle Theme</h2>
+            <ul>
+                <li>CSS variables</li>
+                <li>Local Storage</li>
+                <li>JavaScript</li>
+                <br/>
+                <br/>
+            </ul>
         </td>
-        <td width="49.9%">
+        <td>
           <img src="public/images/run-fluid-responsive.gif" />
         </td>
     </tr>
     <tr>
-        <td width="49.9%">
+        <td>
           <img src="public/images/run-infinite-responsive.gif" />
         </td>
-        <td width="49.9%">
-          <h2>Responsive</h2>
-          <p>ola munodo</p>
+        <td>
+            <h2>Responsive</h2>
+            <ul>
+                <li>Fluid Responsive</li>
+                <li>Infinite Responsive</li>
+                <li>Grid Layout</li>
+                <li>Flexible Box Layout</li>
+                <br/>
+                <br/>
+            </ul>
         </td>
     </tr>
 </table>

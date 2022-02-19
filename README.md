@@ -1,4 +1,4 @@
-# First Project Vue ([Video](https://www.instagram.com/p/CaHVBMhOL_s))
+# About This Project ([video](https://www.instagram.com/p/CaHVBMhOL_s))
 
 <table>
     <tr>

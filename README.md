@@ -1,4 +1,4 @@
-<h1>Project Vue</h1>
+# First Project Vue.js ([Video](https://www.instagram.com/p/CaHVBMhOL_s))
 
 <table>
     <tr>
@@ -32,7 +32,7 @@
 
 <br/>
 
-## Start Project ([Project Video](https://www.instagram.com/p/CaHVBMhOL_s))
+## Start Project 
 ```
 npm install
 ```

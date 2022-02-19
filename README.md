@@ -22,8 +22,6 @@
                 <li>CSS variables</li>
                 <li>Local Storage</li>
                 <li>JavaScript</li>
-                <br/>
-                <br/>
             </ul>
         </td>
         <td>
@@ -41,8 +39,6 @@
                 <li>Infinite Responsive</li>
                 <li>Grid Layout</li>
                 <li>Flexible Box Layout</li>
-                <br/>
-                <br/>
             </ul>
         </td>
     </tr>

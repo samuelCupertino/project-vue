@@ -1,3 +1,5 @@
+<h1>Project Vue</h1>
+
 <table>
     <tr>
         <td width="49.9%">
@@ -28,12 +30,12 @@
     </tr>
 </table>
 
-## Start Project
+<br/>
+
+## Start Project ([Project Video](https://www.instagram.com/p/CaHVBMhOL_s))
 ```
 npm install
 ```
 ```
 npm run serve
 ```
-
-### [Project Video](https://www.instagram.com/p/CaHVBMhOL_s) on my instagram. [@samuelCupertino.dev](https://www.instagram.com/samuelcupertino.dev).

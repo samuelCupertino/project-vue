@@ -47,13 +47,6 @@
 <br/>
 
 ## Start Project 
-```
-npm install
-```
-```
-npm run serve
-```
-
 ```bash
 # install dependencies
 npm install
